@@ -9,8 +9,12 @@ export const register = async (username, password) => {
       credentials: 'include'
     });
 
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(errorData.message || 'Registration failed');
+    }
+    
     const data = await response.json();
-    if (!response.ok) throw new Error(data.message || 'Registration failed');
     return data;
   } catch (error) {
     throw error;
@@ -26,8 +30,12 @@ export const login = async (username, password) => {
       credentials: 'include'
     });
 
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(errorData.message || 'Login failed');
+    }
+
     const data = await response.json();
-    if (!response.ok) throw new Error(data.message || 'Login failed');
     return data;
   } catch (error) {
     throw error;
@@ -42,8 +50,8 @@ export const logout = async () => {
     });
 
     if (!response.ok) {
-      const data = await response.json();
-      throw new Error(data.message || 'Logout failed');
+      const errorData = await response.json();
+      throw new Error(errorData.message || 'Logout failed');
     }
   } catch (error) {
     throw error;
