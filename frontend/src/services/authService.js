@@ -1,4 +1,4 @@
-const API_URL = 'https://todoapp-tau-liart.vercel.app';
+const API_URL = 'https://todoapp-tau-liart.vercel.app/api';
 
 export const register = async (username, password) => {
   try {
