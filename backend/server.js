@@ -2,7 +2,6 @@ const express = require("express");
 const cors = require("cors");
 const cookieParser = require('cookie-parser');
 const dotenv = require("dotenv");
-const pool = require("./config/db");
 
 dotenv.config();
 
@@ -23,6 +22,7 @@ app.use(cookieParser());
 
 app.use('/api/auth', authRoutes);
 app.use('/api/todos', todoRoutes);
+
 app.get("/", (req, res) => {
   res.send("Hello from Vercel!");
 });
