@@ -23,6 +23,10 @@ app.use(cookieParser());
 
 app.use('/api/auth', authRoutes);
 app.use('/api/todos', todoRoutes);
+app.get("/", (req, res) => {
+  res.send("Hello from Vercel!");
+});
+
 
 app.listen(PORT, () => {
   console.log(`server has started on port ${PORT}`);
