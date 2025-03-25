@@ -55,7 +55,7 @@
   
   .navbar-link:hover {
     opacity: 0.8;
-    color: #3ce7c2;
+    color: #3c47e7;
   }
 
   /* AddTodo Component Styling */
@@ -209,9 +209,8 @@
 }
 
 .delete-btn {
-  background: #dc3545;
-  color: #fff;
-  margin-left: 280px;
+  background: #f52b3fec;
+  margin-left: 290px;
 }
 
 .delete-btn:hover {
@@ -347,7 +346,7 @@
   padding: 20px;
   background: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(221, 37, 37, 0.726);
   text-align: center;
 }
 
@@ -407,9 +406,9 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background: #e78bd8;
+  background: #ec69d7;
   color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(93, 223, 60, 0.945);
 }
 
 .navbar-brand {
@@ -428,10 +427,6 @@ p {
   font-size: 16px;
 }
 
-.navbar-link:hover {
-  text-decoration: underline;
-}
-
 .navbar button {
   background: none;
   border: none;
@@ -440,15 +435,11 @@ p {
   cursor: pointer;
 }
 
-.navbar button:hover {
-  text-decoration: underline;
-}
-
 /* Footer Styling */
 .footer {
   text-align: center;
   padding: 10px;
-  background: #f1f1f1;
+  background: #e8baf1;
   color: #333;
   position: fixed;
   bottom: 0;
@@ -475,6 +466,15 @@ p {
     .modal {
       background: rgba(10, 52, 168, 0.5);
       
+    }
+
+    .auth-container {
+      width: 350px;
+      margin-top: 100px;
+    }
+
+    .delete-btn {
+      margin-left: 165px;
     }
   }
  
