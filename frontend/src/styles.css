@@ -66,7 +66,7 @@
   padding: 20px;
   background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(219, 2, 248, 0.726);
   text-align: center;
 }
 
@@ -138,7 +138,7 @@
   padding: 20px;
   background: #ffffff;
   border-radius: 12px;
-  box-shadow: 7px 24px 10px 15px rgba(241, 38, 214, 0.1);
+  box-shadow: 0 4px 10px rgba(219, 2, 248, 0.726);
   text-align: center;
 }
 
@@ -211,6 +211,7 @@
 .delete-btn {
   background: #dc3545;
   color: #fff;
+  margin-left: 280px;
 }
 
 .delete-btn:hover {
@@ -455,8 +456,26 @@ p {
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
   
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 550px) {
+    .dashboard-container {
+      width: 400px;
+      margin: 15px auto;
+    }
+    .saved-todos {
+      width: 360px;
+     
+      margin-bottom: 25px;
     
+    }
+
+    .add-todo-container {
+      width: 360px;
+      
+    }
+    .modal {
+      background: rgba(10, 52, 168, 0.5);
+      
+    }
   }
  
 

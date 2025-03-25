@@ -39,7 +39,7 @@ const SavedTodos = ({ todos, setSavedTodos, loading }) => {
                 <p>{todo.description}</p>
                 <div>{todo.created_at}</div>
                 <button className="edit-btn" onClick={() => handleEditClick(todo)}>✎ Edit</button>
-                <button className="delete-btn" onClick={(e) => handleDeleteTodo(todo.id, e)}>X</button>
+                <button className="delete-btn" onClick={(e) => handleDeleteTodo(todo.id, e)}>🗑️</button>
               </li>
             ))}
           </ul>
