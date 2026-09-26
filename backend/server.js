@@ -13,7 +13,7 @@ const app = express();
 
 //middleware
 app.use(cors({ 
-  origin: ['https://todofrontend-khaki.vercel.app', 'http://localhost:3000'],
+  origin: ['https://dipwhat-to-do.vercel.app', 'http://localhost:3000'],
   credentials: true 
 }));
 
